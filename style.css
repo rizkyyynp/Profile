@@ -64,11 +64,11 @@ body {
   color: #f3f0ca;
 }
 .banner{
-  padding-top: 10rem;
+  padding-top: 7rem;
 }
 .banner .banner-container{
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-image: url(assets/photo3.png);
   background-size: cover;
   background-position: bottom;
