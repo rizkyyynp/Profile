@@ -118,12 +118,90 @@ body {
   border: 2px solid #192655;
 }
 
+/*  SKILL SECTION  */
+.myskill{
+  height: 150vh;
+}
+.skill-container{
+  width: 100%;
+  height: 100vh;
+  padding: 0 8%;
+}
+
+.skill-container h1{
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.skill-container h1::after{
+  content: '';
+  background: #303ef7;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skill-row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.skill-row .skills{
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.skills i{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skills h2{
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.skills:hover{
+  background: #071952;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.skills:hover i{
+  color: #fff;
+}
+
+/*Projek Slider*/
+#projek{
+  background-color: #3876BF;
+}
+.card-img, .card-img-bottom, .card-img-top {
+  height: 19vh;
+}
+
+@media only screen and (max-width:964px){
+  .myskill{
+    height: 230vh;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .header {
     flex-wrap: wrap;
-    position: fixed;
+    position:fixed;
     width: 100%;
+    z-index: 99;
   }
 
   .header .list-navi {
@@ -140,9 +218,13 @@ body {
     align-items: center;
   }
 
+  .banner{
+    padding-top: 12rem;
+  }
+
   .banner .banner-container{
     height: 100vh;
-    background-position: 67% bottom;
+    background-position: 55% bottom;
   }
 
   .banner-container .banner-content{
@@ -161,6 +243,19 @@ body {
     .banner-content .head-title h3{
       font-size: 44px;
     }
+    .banner-content .head-title p{
+      text-align: justify;
+    }
+
+    .myskill{
+      height: 235vh;
+    }
+
+}
+@media only screen and (max-width: 630px) {
+  .myskill{
+    height: 360vh;
+  }
 
 }
 
@@ -169,7 +264,7 @@ body {
     background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.1), rgba(0,0,0,0.1), #91D8E4, #82AAE3), url(assets/photo2.png);
     background-size: cover;
     background-position: bottom;
-    height: 100vh;
+    height: 120vh;
   }
 
   .banner-container .banner-content{
@@ -189,4 +284,9 @@ body {
   .banner-content .head-title h3{
     font-size: 38px;
   }
+  .myskill{
+    height: 380vh;
+  }
+
+  
 }
