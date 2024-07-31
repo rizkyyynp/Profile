@@ -1,4 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.navbar-container header.scrolled {
+    background-color: #101314;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .navbar-container input:checked~header nav {
+        height: 100vh;
+        background: rgba( 255, 255, 255, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 195, 194, 146, 0.37 );
+        backdrop-filter: blur(2px);
+    }
+
+    .navbar-container input:checked~header label>div:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    .navbar-container input:checked~header label>div:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    .navbar-container input:checked~header label>div:nth-child(2) {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
