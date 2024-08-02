@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 .navbar-container header.scrolled {
-    background-color: #101314;
-    transition: background-color 0.3s;
+    background-color: #121416;
+    box-shadow: 0 8px 8px 0 rgba( 195, 194, 146, 0.37 );
+    transition: background-color 0.1s;
 }
 
 @media (max-width: 768px) {
