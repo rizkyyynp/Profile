@@ -9,7 +9,34 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      'max-md': { 'max': '768px' },
+      sm: { 'min': '480px' },
+      md: { 'min': '769px', },
+      lg: { 'min': '1024px' },
+      xl: { 'min': '1440px' },
+    },
     extend: {
+      colors: {
+        "primary": '#C3C292',
+        "secondary": '#BDC39D',
+        "back1": '#090A0C',
+      },
+      animation: {
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
+      },
+      keyframes: {
+        orbit: {
+          "0%": {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
