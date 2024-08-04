@@ -1,6 +1,6 @@
 import Hero from "@/components/ui/Hero/Hero";
 import Layout from "@/Layouts/layout";
-import ParallaxText from "@/components/framer/parallaxText";
+import ParallaxText from "@/components/framer/ParallaxText";
 
 export default function Home() {
   return (
