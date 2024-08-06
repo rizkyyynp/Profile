@@ -10,9 +10,9 @@ module.exports = {
   prefix: "",
   theme: {
     screens: {
-      'max-md': { 'max': '768px' },
+      'max-md': { 'max': '767px' },
       sm: { 'min': '480px' },
-      md: { 'min': '769px', },
+      md: { 'min': '768px', },
       lg: { 'min': '1024px' },
       xl: { 'min': '1440px' },
     },
