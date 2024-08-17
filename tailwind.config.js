@@ -20,7 +20,9 @@ module.exports = {
       colors: {
         "primary": '#C3C292',
         "secondary": '#BDC39D',
+        "third": '#C1C7A3',
         "back1": '#090A0C',
+        "back2": '#171717',
       },
       size:{
         '17': "68px",
