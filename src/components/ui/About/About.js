@@ -3,7 +3,7 @@ import TextRevealByWord from "@/components/magicui/text-reveal"
 
 export default function About() {
     return (
-        <section className="lg:h-min-screen bg-back1 p-4 md:px-8 py-6 pt-20">
+        <section id="about" className="lg:h-min-screen bg-back1 p-4 md:px-8 py-6 pt-20">
             <div>
                 <AnimateTitle
                     title={"About me"}
