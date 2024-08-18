@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { AnimatedTooltip } from "../animated-tooltip";
-import HtmlLogo from '@/assets/html5.png';
+import { AnimatedTooltip } from "./animated-tooltip";
 
 
 const tools = [
@@ -48,7 +47,7 @@ const tools = [
     },
 ]
 
-export function AnimatedTooltipPreview() {
+export function AnimatedTooltipPreview({ tools }) {
     return (
         <div className="flex flex-row items-center justify-center my-4 w-full">
             <AnimatedTooltip items={tools} />

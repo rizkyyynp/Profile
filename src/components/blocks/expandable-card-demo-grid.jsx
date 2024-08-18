@@ -9,13 +9,131 @@ import ExpandedImage3 from "@/assets/pro3.png";
 import ProjectImage1 from "@/assets/pro4.png";
 import ProjectImage2 from "@/assets/pro5.png";
 import ProjectImage3 from "@/assets/pro6.png";
-import { AnimatedTooltip } from "../ui/animated-tooltip";
+import { AnimatedTooltip } from "../ui/Projects/animated-tooltip";
 import { AnimatedTooltipPreview } from "../ui/Projects/tooltip";
 
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState(null);
   const id = useId();
   const ref = useRef(null);
+
+  const toolsCard1 = [
+    {
+      id: 1,
+      name: "HTML",
+      designation: "",
+      image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    },
+    {
+      id: 2,
+      name: "Tailwind",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    },
+    {
+      id: 4,
+      name: "Next.Js",
+      designation: "",
+      image:
+        "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    },
+    {
+      id: 6,
+      name: "Github",
+      designation: "",
+      image:
+        "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+    },
+  ];
+
+  const toolsCard2 = [
+    {
+      id: 1,
+      name: "HTML",
+      designation: "",
+      image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    },
+    {
+      id: 2,
+      name: "Tailwind",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    },
+    {
+      id: 4,
+      name: "Next.Js",
+      designation: "",
+      image:
+        "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    },
+    {
+      id: 5,
+      name: "Redux",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=jD-fJzVguBmw&format=png&color=000000",
+    },
+    {
+      id: 6,
+      name: "Github",
+      designation: "",
+      image:
+        "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+    },
+  ];
+
+  const toolsCard3 = [
+    {
+      id: 1,
+      name: "HTML",
+      designation: "",
+      image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    },
+    {
+      id: 2,
+      name: "Tailwind",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    },
+    {
+      id: 4,
+      name: "Next.Js",
+      designation: "",
+      image:
+        "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    },
+    {
+      id: 6,
+      name: "Github",
+      designation: "",
+      image:
+        "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+    },
+  ];
 
   useEffect(() => {
     function onKeyDown(event) {
@@ -161,7 +279,9 @@ export default function ExpandableCardDemo() {
                 >
                   {card.title}
                 </motion.h3>
-                <AnimatedTooltipPreview />
+                {index === 0 && <AnimatedTooltipPreview tools={toolsCard1} />}
+                {index === 1 && <AnimatedTooltipPreview tools={toolsCard2} />}
+                {index === 2 && <AnimatedTooltipPreview tools={toolsCard3} />}
               </div>
             </div>
           </motion.div>
