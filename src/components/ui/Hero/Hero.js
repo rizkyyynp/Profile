@@ -3,6 +3,7 @@ import React from "react";
 import { DockDemo } from "@/components/ui/Dock/DockDemo";
 import OrbitingCircle from "../Orbit/OrbitingCircle";
 import ParallaxText from "@/components/framer/ParallaxText";
+import AnimateButton from "./button";
 
 export default function Hero() {
     const texts = [
@@ -21,6 +22,9 @@ export default function Hero() {
                         pauseBetweenAnimations={500}
                     />
                     <DockDemo />
+                    <div className="my-4">
+                        <AnimateButton />
+                    </div>
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <OrbitingCircle />
