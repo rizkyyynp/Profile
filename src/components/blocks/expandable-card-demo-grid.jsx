@@ -6,9 +6,11 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import ExpandedImage1 from "@/assets/pro1.png";
 import ExpandedImage2 from "@/assets/pro2.png";
 import ExpandedImage3 from "@/assets/pro3.png";
+import ExpandedImage4 from "@/assets/pro7.png";
 import ProjectImage1 from "@/assets/pro4.png";
 import ProjectImage2 from "@/assets/pro5.png";
 import ProjectImage3 from "@/assets/pro6.png";
+import ProjectImage4 from "@/assets/pro8.png";
 import { AnimatedTooltip } from "../ui/Projects/animated-tooltip";
 import { AnimatedTooltipPreview } from "../ui/Projects/tooltip";
 
@@ -279,6 +281,7 @@ export default function ExpandableCardDemo() {
                 {index === 0 && <AnimatedTooltipPreview tools={toolsCard1} />}
                 {index === 1 && <AnimatedTooltipPreview tools={toolsCard2} />}
                 {index === 2 && <AnimatedTooltipPreview tools={toolsCard3} />}
+                {index === 3 && <AnimatedTooltipPreview tools={toolsCard4} />}
               </div>
             </div>
           </motion.div>
@@ -385,8 +388,8 @@ const cards = [
   {
     description: "HTML, CSS, Javascript",
     title: "Website Khastana",
-    initialSrc: ProjectImage3,
-    expandedSrc: ExpandedImage3,
+    initialSrc: ProjectImage4,
+    expandedSrc: ExpandedImage4,
     ctaText: "Visit",
     ctaLink: "https://khastanahadiubud.com/",
     content: () => {
