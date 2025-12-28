@@ -134,6 +134,30 @@ export default function ExpandableCardDemo() {
     },
   ];
 
+    const toolsCard4 = [
+    {
+      id: 1,
+      name: "HTML",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    },
+    {
+      id: 2,
+      name: "CSS",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=4d9YPiN04osD&format=png&color=000000",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    },
+  ];
+
   useEffect(() => {
     function onKeyDown(event) {
       if (event.key === "Escape") {
