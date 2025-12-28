@@ -7,10 +7,12 @@ import ExpandedImage1 from "@/assets/pro1.png";
 import ExpandedImage2 from "@/assets/pro2.png";
 import ExpandedImage3 from "@/assets/pro3.png";
 import ExpandedImage4 from "@/assets/pro7.png";
+import ExpandedImage5 from "@/assets/pro9.png";
 import ProjectImage1 from "@/assets/pro4.png";
 import ProjectImage2 from "@/assets/pro5.png";
 import ProjectImage3 from "@/assets/pro6.png";
 import ProjectImage4 from "@/assets/pro8.png";
+import ProjectImage5 from "@/assets/pro10.png";
 import { AnimatedTooltip } from "../ui/Projects/animated-tooltip";
 import { AnimatedTooltipPreview } from "../ui/Projects/tooltip";
 
@@ -134,7 +136,7 @@ export default function ExpandableCardDemo() {
     },
   ];
 
-    const toolsCard4 = [
+  const toolsCard4 = [
     {
       id: 1,
       name: "HTML",
@@ -155,6 +157,44 @@ export default function ExpandableCardDemo() {
       designation: "",
       image:
         "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    },
+    {
+      id: 4,
+      name: "Wordpress",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=13664&format=png&color=000000",
+    },
+  ];
+
+  const toolsCard5 = [
+    {
+      id: 1,
+      name: "HTML",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    },
+    {
+      id: 2,
+      name: "CSS",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=4d9YPiN04osD&format=png&color=000000",
+    },
+    {
+      id: 3,
+      name: "JavaScript",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    },
+    {
+      id: 4,
+      name: "Wordpress",
+      designation: "",
+      image:
+        "https://img.icons8.com/?size=100&id=13664&format=png&color=000000",
     },
   ];
 
@@ -306,6 +346,7 @@ export default function ExpandableCardDemo() {
                 {index === 1 && <AnimatedTooltipPreview tools={toolsCard2} />}
                 {index === 2 && <AnimatedTooltipPreview tools={toolsCard3} />}
                 {index === 3 && <AnimatedTooltipPreview tools={toolsCard4} />}
+                {index === 4 && <AnimatedTooltipPreview tools={toolsCard5} />}
               </div>
             </div>
           </motion.div>
@@ -423,6 +464,44 @@ const cards = [
           Tegallalang Ubud during my role as a Front End Developer at Tiara Hana
           Indonesia. The project focused on building a responsive and
           informative website tailored to the client’s needs.
+        </p>
+      );
+    },
+  },
+
+  {
+    description: "Next.JS, Tailwind, Magic UI, Aceternity",
+    title: "Personal Portfolio",
+    initialSrc: ProjectImage3,
+    expandedSrc: ExpandedImage3,
+    ctaText: "Visit",
+    ctaLink: "https://porfolio-rizky-nugraha.vercel.app/",
+    content: () => {
+      return (
+        <p>
+          This Personal Portfolio website is a website that provides information
+          about me. This website is the result of learning from various things
+          that have been done in the bootcamp program. This website displays
+          some of my best projects that have been done during bootcamp.
+        </p>
+      );
+    },
+  },
+
+  {
+    description: "HTML, CSS, Javascript",
+    title: "Website Tiara Hana Indonesia",
+    initialSrc: ProjectImage5,
+    expandedSrc: ExpandedImage5,
+    ctaText: "Visit",
+    ctaLink: "https://www.tiarahana.com/",
+    content: () => {
+      return (
+        <p>
+          This website is one of the projects developed for Tiara Hana
+          Indonesia, where I worked as a Front End Developer. The project
+          focused on building a responsive and informative company profile
+          website to effectively represent the brand and its services.
         </p>
       );
     },
