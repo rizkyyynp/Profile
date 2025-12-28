@@ -452,7 +452,7 @@ const cards = [
 
   {
     description: "HTML, CSS, Javascript",
-    title: "Website Khastana",
+    title: "Website Khastana Hadi Tegallalang Ubud",
     initialSrc: ProjectImage4,
     expandedSrc: ExpandedImage4,
     ctaText: "Visit",
