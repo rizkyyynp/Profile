@@ -22,7 +22,8 @@ export default function ExpandableCardDemo() {
       id: 1,
       name: "HTML",
       designation: "",
-      image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+      image:
+        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
     },
     {
       id: 2,
@@ -42,15 +43,13 @@ export default function ExpandableCardDemo() {
       id: 4,
       name: "Next.Js",
       designation: "",
-      image:
-        "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+      image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
       id: 6,
       name: "Github",
       designation: "",
-      image:
-        "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+      image: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
     },
   ];
 
@@ -59,7 +58,8 @@ export default function ExpandableCardDemo() {
       id: 1,
       name: "HTML",
       designation: "",
-      image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+      image:
+        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
     },
     {
       id: 2,
@@ -79,8 +79,7 @@ export default function ExpandableCardDemo() {
       id: 4,
       name: "Next.Js",
       designation: "",
-      image:
-        "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+      image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
       id: 5,
@@ -93,8 +92,7 @@ export default function ExpandableCardDemo() {
       id: 6,
       name: "Github",
       designation: "",
-      image:
-        "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+      image: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
     },
   ];
 
@@ -103,7 +101,8 @@ export default function ExpandableCardDemo() {
       id: 1,
       name: "HTML",
       designation: "",
-      image: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+      image:
+        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
     },
     {
       id: 2,
@@ -123,15 +122,13 @@ export default function ExpandableCardDemo() {
       id: 4,
       name: "Next.Js",
       designation: "",
-      image:
-        "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+      image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
       id: 6,
       name: "Github",
       designation: "",
-      image:
-        "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+      image: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
     },
   ];
 
@@ -324,9 +321,6 @@ export const CloseIcon = () => {
   );
 };
 
-
-
-
 const cards = [
   {
     description: "Next.JS, API, Tailwind",
@@ -338,7 +332,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          This is one of the projects I worked on during the bootcamp program at Mentored. This project is a CRUD system integrated with an API, and I use the Next Js framework and also style it using Tailwind.
+          This is one of the projects I worked on during the bootcamp program at
+          Mentored. This project is a CRUD system integrated with an API, and I
+          use the Next Js framework and also style it using Tailwind.
         </p>
       );
     },
@@ -353,8 +349,16 @@ const cards = [
     content: () => {
       return (
         <p>
-
-          This is one of the final projects that I worked on during the bootcamp program at Mentored. This project is a travel website that is integrated with an API, in this project there is a dark mode feature that uses Redux. <br />NusaGo travel also has a login system, which was created for admins and for admins there is a dashboard feature. The dashboard feature provides a CRUD system for customer data and also all content that will later appear on user pages. And for the user page, it certainly displays content from the API and there is also a profile update feature and select destinations based on categories.
+          This is one of the final projects that I worked on during the bootcamp
+          program at Mentored. This project is a travel website that is
+          integrated with an API, in this project there is a dark mode feature
+          that uses Redux. <br />
+          NusaGo travel also has a login system, which was created for admins
+          and for admins there is a dashboard feature. The dashboard feature
+          provides a CRUD system for customer data and also all content that
+          will later appear on user pages. And for the user page, it certainly
+          displays content from the API and there is also a profile update
+          feature and select destinations based on categories.
         </p>
       );
     },
@@ -369,7 +373,29 @@ const cards = [
     content: () => {
       return (
         <p>
-          This Personal Portfolio website is a website that provides information about me. This website is the result of learning from various things that have been done in the bootcamp program. This website displays some of my best projects that have been done during bootcamp.
+          This Personal Portfolio website is a website that provides information
+          about me. This website is the result of learning from various things
+          that have been done in the bootcamp program. This website displays
+          some of my best projects that have been done during bootcamp.
+        </p>
+      );
+    },
+  },
+
+  {
+    description: "HTML, CSS, Javascript",
+    title: "Website Khastana",
+    initialSrc: ProjectImage3,
+    expandedSrc: ExpandedImage3,
+    ctaText: "Visit",
+    ctaLink: "https://khastanahadiubud.com/",
+    content: () => {
+      return (
+        <p>
+          This website is one of the projects developed for Khastan Hadi
+          Tegallalang Ubud during my role as a Front End Developer at Tiara Hana
+          Indonesia. The project focused on building a responsive and
+          informative website tailored to the client’s needs.
         </p>
       );
     },
