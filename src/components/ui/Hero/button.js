@@ -4,8 +4,8 @@ import React from "react";
 export default function AnimateButton() {
     const downloadCV = () => {
         const link = document.createElement('a');
-        link.href = '/CvRizky.pdf';
-        link.download = 'CvRizky.pdf';
+        link.href = '/CV_Rizky_Nugraha.pdf';
+        link.download = 'CV_Rizky_Nugraha.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
