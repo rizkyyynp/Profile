@@ -86,13 +86,6 @@ export default function ExpandableCardDemo() {
       image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
-      id: 5,
-      name: "Redux",
-      designation: "",
-      image:
-        "https://img.icons8.com/?size=100&id=jD-fJzVguBmw&format=png&color=000000",
-    },
-    {
       id: 6,
       name: "Github",
       designation: "",
@@ -101,42 +94,6 @@ export default function ExpandableCardDemo() {
   ];
 
   const toolsCard3 = [
-    {
-      id: 1,
-      name: "HTML",
-      designation: "",
-      image:
-        "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
-    },
-    {
-      id: 2,
-      name: "Tailwind",
-      designation: "",
-      image:
-        "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000",
-    },
-    {
-      id: 3,
-      name: "JavaScript",
-      designation: "",
-      image:
-        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
-    },
-    {
-      id: 4,
-      name: "Next.Js",
-      designation: "",
-      image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
-    },
-    {
-      id: 6,
-      name: "Github",
-      designation: "",
-      image: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
-    },
-  ];
-
-  const toolsCard4 = [
     {
       id: 1,
       name: "HTML",
@@ -167,7 +124,7 @@ export default function ExpandableCardDemo() {
     },
   ];
 
-  const toolsCard5 = [
+  const toolsCard4 = [
     {
       id: 1,
       name: "HTML",
@@ -346,7 +303,6 @@ export default function ExpandableCardDemo() {
                 {index === 1 && <AnimatedTooltipPreview tools={toolsCard2} />}
                 {index === 2 && <AnimatedTooltipPreview tools={toolsCard3} />}
                 {index === 3 && <AnimatedTooltipPreview tools={toolsCard4} />}
-                {index === 4 && <AnimatedTooltipPreview tools={toolsCard5} />}
               </div>
             </div>
           </motion.div>
@@ -408,30 +364,6 @@ const cards = [
     },
   },
   {
-    description: "Next.JS, API, Tailwind, Redux",
-    title: "NusaGo Travel Website",
-    initialSrc: ProjectImage2,
-    expandedSrc: ExpandedImage2,
-    ctaText: "Visit",
-    ctaLink: "https://nusa-go-travel.vercel.app/",
-    content: () => {
-      return (
-        <p>
-          This is one of the final projects that I worked on during the bootcamp
-          program at Mentored. This project is a travel website that is
-          integrated with an API, in this project there is a dark mode feature
-          that uses Redux. <br />
-          NusaGo travel also has a login system, which was created for admins
-          and for admins there is a dashboard feature. The dashboard feature
-          provides a CRUD system for customer data and also all content that
-          will later appear on user pages. And for the user page, it certainly
-          displays content from the API and there is also a profile update
-          feature and select destinations based on categories.
-        </p>
-      );
-    },
-  },
-  {
     description: "Next.JS, Tailwind, Magic UI, Aceternity",
     title: "Personal Portfolio",
     initialSrc: ProjectImage3,
@@ -464,25 +396,6 @@ const cards = [
           Tegallalang Ubud during my role as a Front End Developer at Tiara Hana
           Indonesia. The project focused on building a responsive and
           informative website tailored to the client’s needs.
-        </p>
-      );
-    },
-  },
-
-  {
-    description: "Next.JS, Tailwind, Magic UI, Aceternity",
-    title: "Personal Portfolio",
-    initialSrc: ProjectImage3,
-    expandedSrc: ExpandedImage3,
-    ctaText: "Visit",
-    ctaLink: "https://porfolio-rizky-nugraha.vercel.app/",
-    content: () => {
-      return (
-        <p>
-          This Personal Portfolio website is a website that provides information
-          about me. This website is the result of learning from various things
-          that have been done in the bootcamp program. This website displays
-          some of my best projects that have been done during bootcamp.
         </p>
       );
     },
